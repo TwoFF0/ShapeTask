@@ -1,18 +1,18 @@
 namespace ShapeLibrary.Tests;
 
 /// <summary>
-/// Набор юнит-тестов для библиотеки геометрических фигур.
+/// РќР°Р±РѕСЂ СЋРЅРёС‚-С‚РµСЃС‚РѕРІ РґР»СЏ Р±РёР±Р»РёРѕС‚РµРєРё РіРµРѕРјРµС‚СЂРёС‡РµСЃРєРёС… С„РёРіСѓСЂ.
 /// </summary>
 [TestFixture]
 public class GeometryLibraryTests
 {
 	/// <summary>
-	/// Погрешность для сравнения результатов с плавающей точкой.
+	/// РџРѕРіСЂРµС€РЅРѕСЃС‚СЊ РґР»СЏ СЃСЂР°РІРЅРµРЅРёСЏ СЂРµР·СѓР»СЊС‚Р°С‚РѕРІ СЃ РїР»Р°РІР°СЋС‰РµР№ С‚РѕС‡РєРѕР№.
 	/// </summary>
 	private readonly double Delta = 0.001;
 
 	/// <summary>
-	/// Тест вычисления площади круга.
+	/// РўРµСЃС‚ РІС‹С‡РёСЃР»РµРЅРёСЏ РїР»РѕС‰Р°РґРё РєСЂСѓРіР°.
 	/// </summary>
 	[Test]
 	public void CircleAreaCalculation()
@@ -24,7 +24,7 @@ public class GeometryLibraryTests
 	}
 
 	/// <summary>
-	/// Тест вычисления площади треугольника.
+	/// РўРµСЃС‚ РІС‹С‡РёСЃР»РµРЅРёСЏ РїР»РѕС‰Р°РґРё С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°.
 	/// </summary>
 	[Test]
 	public void TriangleAreaCalculation()
@@ -36,7 +36,7 @@ public class GeometryLibraryTests
 	}
 
 	/// <summary>
-	/// Тест проверки, является ли треугольник прямоугольным.
+	/// РўРµСЃС‚ РїСЂРѕРІРµСЂРєРё, СЏРІР»СЏРµС‚СЃСЏ Р»Рё С‚СЂРµСѓРіРѕР»СЊРЅРёРє РїСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Рј.
 	/// </summary>
 	[Test]
 	public void RightTriangleCheck()
@@ -46,7 +46,7 @@ public class GeometryLibraryTests
 	}
 
 	/// <summary>
-	/// Тест использования DynamicAreaCalculator для вычисления площади без знания типа фигуры.
+	/// РўРµСЃС‚ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ DynamicAreaCalculator РґР»СЏ РІС‹С‡РёСЃР»РµРЅРёСЏ РїР»РѕС‰Р°РґРё Р±РµР· Р·РЅР°РЅРёСЏ С‚РёРїР° С„РёРіСѓСЂС‹.
 	/// </summary>
 	[Test]
 	public void DynamicAreaCalculation()
@@ -63,7 +63,7 @@ public class GeometryLibraryTests
 	}
 
 	/// <summary>
-	/// Тест негативного случая с отрицательным радиусом круга.
+	/// РўРµСЃС‚ РЅРµРіР°С‚РёРІРЅРѕРіРѕ СЃР»СѓС‡Р°СЏ СЃ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Рј СЂР°РґРёСѓСЃРѕРј РєСЂСѓРіР°.
 	/// </summary>
 	[Test]
 	public void NegativeRadiusCircleConstruction()
@@ -72,7 +72,7 @@ public class GeometryLibraryTests
 	}
 
 	/// <summary>
-	/// Тест негативного случая с некорректными значениями сторон треугольника.
+	/// РўРµСЃС‚ РЅРµРіР°С‚РёРІРЅРѕРіРѕ СЃР»СѓС‡Р°СЏ СЃ РЅРµРєРѕСЂСЂРµРєС‚РЅС‹РјРё Р·РЅР°С‡РµРЅРёСЏРјРё СЃС‚РѕСЂРѕРЅ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°.
 	/// </summary>
 	[Test]
 	public void InvalidTriangleConstruction()
@@ -81,7 +81,7 @@ public class GeometryLibraryTests
 	}
 
 	/// <summary>
-	/// Тест негативного случая с переполнением при вычислении площади круга.
+	/// РўРµСЃС‚ РЅРµРіР°С‚РёРІРЅРѕРіРѕ СЃР»СѓС‡Р°СЏ СЃ РїРµСЂРµРїРѕР»РЅРµРЅРёРµРј РїСЂРё РІС‹С‡РёСЃР»РµРЅРёРё РїР»РѕС‰Р°РґРё РєСЂСѓРіР°.
 	/// </summary>
 	[Test]
 	public void OverflowCircleAreaCalculation()
@@ -91,7 +91,7 @@ public class GeometryLibraryTests
 	}
 
 	/// <summary>
-	/// Тест негативного случая с переполнением при вычислении площади треугольника.
+	/// РўРµСЃС‚ РЅРµРіР°С‚РёРІРЅРѕРіРѕ СЃР»СѓС‡Р°СЏ СЃ РїРµСЂРµРїРѕР»РЅРµРЅРёРµРј РїСЂРё РІС‹С‡РёСЃР»РµРЅРёРё РїР»РѕС‰Р°РґРё С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°.
 	/// </summary>
 	[Test]
 	public void OverflowTriangleAreaCalculation()
